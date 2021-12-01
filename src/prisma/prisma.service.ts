@@ -4,6 +4,6 @@ import { Injectable } from '@nestjs/common';
 @Injectable()
 export class PrismaService extends PrismaClient {
   constructor() {
-    super({ log: ['info'] }); // pass PrismaClientOptions e.g. logging levels or error formatting
+    super(); // pass PrismaClientOptions e.g. logging levels or error formatting
   }
 }
